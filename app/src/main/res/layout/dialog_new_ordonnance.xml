@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelaOne"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.shagufta.medicalert_v3.New_ordonnance">
+
+        <EditText
+            android:id="@+id/nomMedoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="@string/nom_du_medicament"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/posologie"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/nomMedoc"
+            android:text="@string/renseignez_la_posologie"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/matin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/posologie"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/matin" />
+
+        <CheckBox
+            android:id="@+id/midi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/matin"
+            android:layout_alignStart="@+id/matin"
+            android:layout_below="@+id/nbcptmatin"
+            android:layout_marginTop="38dp"
+            android:text="@string/midi" />
+
+        <CheckBox
+            android:id="@+id/soir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/midi"
+            android:layout_alignStart="@+id/midi"
+            android:layout_below="@+id/nbcptmidi"
+            android:layout_marginTop="37dp"
+            android:text="@string/soir" />
+
+        <EditText
+            android:id="@+id/duree"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/soir"
+            android:layout_alignStart="@+id/soir"
+            android:layout_below="@+id/nbcptsoir"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:hint="@string/duree_en_jours"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/nbBoite"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/duree"
+            android:layout_alignBottom="@+id/duree"
+            android:layout_alignEnd="@+id/nbcptsoir"
+            android:layout_alignRight="@+id/nbcptsoir"
+            android:ems="10"
+            android:hint="@string/nb_boite"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/nbcptmatin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/matin"
+            android:layout_alignBottom="@+id/matin"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="23dp"
+            android:layout_marginRight="23dp"
+            android:ems="10"
+            android:hint="@string/nombre_de_comprime"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/nbcptmidi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/midi"
+            android:layout_alignBottom="@+id/midi"
+            android:layout_alignLeft="@+id/nbcptmatin"
+            android:layout_alignStart="@+id/nbcptmatin"
+            android:ems="10"
+            android:hint="@string/nombre_de_comprime"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/nbcptsoir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/nbcptmidi"
+            android:layout_alignRight="@+id/nbcptmidi"
+            android:layout_alignTop="@+id/soir"
+            android:ems="10"
+            android:hint="@string/nombre_de_comprime"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/valider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="11dp"
+            android:text="@string/valider" />
+
+        <EditText
+            android:id="@+id/nbTotcomprime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/duree"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:hint="@string/nombre_de_comprim_dans_une_boite"
+            android:inputType="number" />
+
+</RelativeLayout>

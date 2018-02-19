@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="default_user">3e9017ab-2f2c-499d-853d-c061c1675b80-bluemix</string>
+    <string name="default_dbname">medicament</string>
+    <string name="default_api_key">driestennignotherfewasti</string>
+    <string name="default_api_password">b55574ad27b9a9b1ed2e558daa0befd364338f80</string>
+
+</resources>
